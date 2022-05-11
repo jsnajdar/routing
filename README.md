@@ -14,15 +14,15 @@ In this example I will illustrate how to use Spring Boot WebFlux and JDK 11 for:
 - origin and destination are required
 - country codes use */countries/codes* path (see below)
 
-- success response when route was successfully found:
-
+Success response when route was successfully found:
+      
 	GET /routing/CZE/ITA 
 
 	HTTP status 200
 	{"route":["CZE","AUT","ITA"]}
 
-- error response when no route was found:
-
+Error response when no route was found:
+      
 	GET /routing/CZE/USA
 
 	HTTP status 400
