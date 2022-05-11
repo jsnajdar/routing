@@ -38,6 +38,7 @@ Error response when no route was found:
 
 ### Requirements
 
+* access to https://raw.githubusercontent.com/mledoze/countries/master/countries.json
 * JDK 11
 * Maven
 
