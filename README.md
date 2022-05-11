@@ -53,9 +53,13 @@ tests
 
 	mvn test
 
-run Spring Boot (port 8080)
+run Spring Boot (port 8080) Windows users
 
 	mvnw spring-boot:run
 
+run Spring Boot (port 8080) Linux/macOS users
 
-- macOS AArch64 users have to uncomment netty-resolver-dns-native-macos dependency in pom.xml
+	chmod +x mvnw
+	./mvnw spring-boot:run
+
+**Warning: macOS users have to uncomment netty-resolver-dns-native-macos dependency in pom.xml, but still there are test fails when trying to download countries. But REST API is OK when run by mvnw**
